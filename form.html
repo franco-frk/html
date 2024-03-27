@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+    <style>
+        div{margin: 10px 0;}
+        label{width: 100px; display: inline-block;}
+    </style>
+</head>
+<body>
+    <form action="formsub.html">
+        <fieldset>
+            <legend>Form fields</legend>
+            <div>
+                <label for="inputname" id="">Name : </label>
+                <input type="text" id="inputname" name="name" required placeholder="Enter name">
+            </div>
+            <div>
+                <label for="" id="">Gender : </label>
+                <input type="radio" id="radiomale" name="gender" value="male"><label for="radiomale">Male</label>
+                <input type="radio" id="radiofemale" name="gender" value="female"><label for="radiofemale">Female</label>
+            </div>
+            <div>
+                <label for="" id="">Course : </label>
+                <input type="checkbox" id="checkboxhtml" name="course" value="html"><label for="checkboxhtml">HTML</label>
+                <input type="checkbox" id="checkboxcss" name="course" value="css"><label for="checkboxcss">CSS</label>
+            </div>
+            <div>
+                <label for="">Day : </label>
+                <select name="days" id="">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+            </div>
+            <div>
+                <label for="inputaddress" style="vertical-align: top;">Address : </label>
+                <textarea name="address" id="inputaddress" cols="30" rows="10" readonly placeholder="Message"></textarea>
+            </div>
+            <div>
+                <label for="upimage">Upload image : </label>
+                <input type="file" id="upimage">
+            </div>
+            <div>
+                <label for="">Password : </label>
+                <input type="password">
+            </div>
+            <div>
+                <label for="">Age : </label>
+                <input type="number" min="10" max="20">
+            </div>
+            <div>
+                <label for="">Email : </label>
+                <input type="email">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
